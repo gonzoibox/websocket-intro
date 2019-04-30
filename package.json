@@ -1,0 +1,26 @@
+{
+  "name": "websocket-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "ws": "^6.2.1"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonzoibox/websocket-intro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gonzoibox/websocket-intro/issues"
+  },
+  "homepage": "https://github.com/gonzoibox/websocket-intro#readme"
+}
