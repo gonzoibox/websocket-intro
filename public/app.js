@@ -9,12 +9,19 @@ function setStatus (value) {
     status.innerHTML = value;
 }
 
-function printMessage(message) {
+function printMessage(value) {
     const li = document.createElement('li');
 
     li.innerHTML = value;
     messages.appendChild(li);
 }
+
+form.addEventListener('submit', event => {
+    event.preventDefault();
+
+    ws.send(input.value);
+    input.value = '';
+});
 
 ws.onopen = () => setStatus('ONLINE');
 ws.onclose = () => setStatus('DISCONNECTED');
